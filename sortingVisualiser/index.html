@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sorting Visualizer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+<div class="sidenav">
+<center><b><h4>Algorithms</h4></b><center>	
+	        <a  href="#" id="quick-sort">Quick Sort</a>
+	          <a  href="#" id="bubble-sort">Bubble Sort</a>
+	          <a  href="#" id="selection-sort">Selection Sort</a>
+	          <a href="#" id="linear-sort">Linear Sort</a><br>
+	          <center><b><h4>Speed</h4></b><center>
+ <input id='speed'  type="range" min="1" max="10" value="5" class="slider" id="myRange">
+ <br>
+	        <button id="start" onclick="start()" >Run</button>
+	        
+
+</div>
+	<nav class="navbar navbar-expand-lg navbar-dark " style="background: #324ca8;">
+	  <a class="navbar-brand" href="#">Sorting Visualiser</a>
+	  <a style ="margin-left: 30%; margin-right:8%"class="navbar-brand" href="#" id="title">Algorithm</a>
+	
+	    &nbsp;&nbsp;
+	    <b>Size of Array to Generate</b> &nbsp;&nbsp; &nbsp;
+	    <input  type="text" placeholder="10" id="noe"  maxlength="2" size="2" >
+	   &nbsp; &nbsp; <button id="gen-new" onclick="generateNumbers()">Randomize Array</button>
+	</nav>
+	
+	<div class="main">
+		
+		<div id="element">
+		   
+		</div>	
+		<footer>
+  <p><h6>&nbsp;&nbsp;Author: Siddhant Johari<br></h6></p>
+</footer>
+	</div>
+	
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="script.js"></script>
+</html>
